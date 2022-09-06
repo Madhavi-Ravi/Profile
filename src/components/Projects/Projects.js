@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import ProjectModel from './ProjectModel';
 
 function Projects(props){
@@ -10,6 +10,15 @@ function Projects(props){
     setShowModel(true);
     setShowMoreDetails(event.target.id);
   }
+
+  useEffect(() => {
+    if (showModel == true) {
+      document.body.style.overflow = 'hidden'
+    }
+    else{      
+      document.body.style.overflow = 'visible'
+    }
+  }, [showModel])
 
   return(
     
@@ -24,11 +33,10 @@ function Projects(props){
         </div>
         <div class="flex header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s"></div>
 
-        <div class="flex filter-wrap waypoint animated fade-in" data-animation="fade-in">
+        <div class="flex filter-wrap">
           <div class="flex row">
-            <div class="filter active" data-filter="all">ALL</div>
-            <div class="filter" data-filter=".products">PRODUCTS</div>
-            <div class="filter" data-filter=".projects">PROJECTS</div>
+            <div>Projects & Products</div>
+            
           </div>
         </div>
 
