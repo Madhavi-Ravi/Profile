@@ -275,7 +275,6 @@ nav .link-wrap.visible {
     margin: 0;
     font-size: 16px;
     color: #fff;
-    font-weight: 400;
 }
 
 .bar span {
@@ -389,10 +388,11 @@ section:nth-of-type(4) #gallery .mix:hover .lm-button {
   opacity: 1;
   color: #000;
   position: absolute;
+  top: 120px;
 }
 
 section:nth-of-type(4) #gallery .mix:nth-child(1) .card{
-	background-image: url(components/Projects/images/jellybeat/jb-thumbnail.png);
+	background-image: url(components/Projects/images/reactapplication/billingapplication.jpg);
 	background-size: cover;
 }
 section:nth-of-type(4) #gallery .mix:nth-child(2) .card{
@@ -412,8 +412,8 @@ section:nth-of-type(4) #gallery .mix:nth-child(5) .card{
 	background-size: cover;
 }
 section:nth-of-type(4) #gallery .mix:nth-child(6) .card{
-	background-image: url(components/Projects/images/jellybeat/Product_Listing_Page.png);
-	background-size: cover;
+	background-image: url(components/Projects/images/priceguru/magento-thumbnail.png);
+    background-size: cover;
 }
 
 section:nth-of-type(4) #gallery .mix .text {
@@ -453,6 +453,9 @@ section:nth-of-type(6) .header-bar {
 
 .blog-title{
     margin: 10px;
+    line-height: 15pt;
+    /* align-items: baseline; */
+    text-align: center;
 }
 
 #blogs .mix .card {
@@ -550,13 +553,19 @@ input{
 }
 
 .modal {
-    max-width: 700px;
+    max-width: 80%;
     align-items: flex-start;
     background: #fff;
     box-shadow: 0 0 10px rgb(0 0 0 / 40%);
     box-sizing: border-box;
     color: #333;
     z-index: 99;
+    position: fixed;
+    top: 20px;
+}
+
+.modal__Body--open {
+  overflow-y: hidden;
 }
 
 .carousel-wrap {
@@ -587,7 +596,7 @@ input{
     float: left;
     height: 250px;
     justify-content: center;
-    width: fit-content;
+    width: -webkit-fill-available;
     height: 400px;
 }
 
@@ -630,18 +639,67 @@ a {
 }
 
 
-@media (min-width: 768px) {
-  .modal {
-    left: calc(50% - 20rem);
-    width: 40rem;
+@media screen and (max-width: 376px){
+    .profile-img img {
+        width: 100px;
+    }
+
+    .mix{
+        margin: 21px 0;
+    }
+
+    #gallery .mix .card {
+        width: 350px;
+    }
+
+    #blogs .mix .card {
+        width: 350px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .filter-wrap{
+        display: none;
+    }
+
+    .link-wrap{
+        display: none;
+    }
+
+    .bar{
+        width: 90%;
+    }
+
+    .bar span{
+        padding: 0 2px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrap {
+    height: 250px;
   }
+
+  .slide{
+    height: 250px;
+  }
+
+  .bar{
+        width: 80%;
+    }
 }
 
 
-@media screen and (max-width: 370px){
-.profile-img img {
-    width: 100px;
-}
+@media screen and (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .row{
+        width: 100%;
+        padding: 20px;
+    }
 }
 /*@media screen and (min-width: 340px){
 .page-link {

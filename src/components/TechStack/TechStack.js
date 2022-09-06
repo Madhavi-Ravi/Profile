@@ -5,17 +5,17 @@ import ideas from '../images/icons/ideas.png'
 function TechStack(props) {
 
     const inputRef = useRef(null);
-  const handleNavigation = (e) =>{
+    const handleNavigation = (e) =>{
 
-      console.log(inputRef.current);
-    if (document.activeElement === inputRef.current) {
-        console.log('element has focus');
-      } else {
-        console.log('element does NOT have focus');
+        console.log(inputRef.current);
+      if (document.activeElement === inputRef.current) {
+          console.log('element has focus');
+        } else {
+          console.log('element does NOT have focus');
+        }
       }
-    }
 
-    window.addEventListener("scroll", (e) => handleNavigation(e));
+    //window.addEventListener("scroll", (e) => handleNavigation(e));
 
 	return(
 		<section class="teck-stack-wrapper" id="techstack" ref={props.refTechProp}>
