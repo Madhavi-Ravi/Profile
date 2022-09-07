@@ -25,20 +25,20 @@ function Contact(props){
   return(
     <section id="contact" ref={props.refContactProp}>
         <div class="container flex">
-          <div class="header waypoint animated slide-in-left" data-animation="slide-in-left">
+          <div class="header">
             CONTACT
           </div>
-          <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".25s"></div>
-          <div class="highlight waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".5s">
+          <div class="header-bar"></div>
+          <div class="highlight">
             Have a question or want to work together?
           </div>
-          <form class="flex waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" onSubmit={handleSubmit}>
+          <form class="flex" id="contact-form" onSubmit={handleSubmit}>
             <input name="name" type="text" placeholder="Your Name" required/>
             <input name="emailid" type="email-id" placeholder="Your Email Id" required/>
             <textarea placeholder="Your Message" type="text" name="message" required></textarea>
             <div class={`${showMsgClass}`} id="">
               <div>
-                Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+                Your message was sent successfully. Thanks!
               </div>
             </div>
             <button type="submit" class="contact-button" name="contact_submit">Submit</button>

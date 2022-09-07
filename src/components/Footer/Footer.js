@@ -4,8 +4,6 @@ import { FaMailBulk, FaPhoneAlt, FaCodepen } from 'react-icons/fa';
 function Footer(){
 	return(
 		<footer>
-        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
-
         <div class="icon-wrap flex row">
           <a href="https://www.linkedin.com/in/madhavi-ravi/">
           <div class="flex icon" id="icon-2" size={40} >

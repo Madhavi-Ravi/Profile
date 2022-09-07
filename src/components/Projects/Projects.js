@@ -28,20 +28,19 @@ function Projects(props){
     no={showMoreDetails}
     onConfirm={()=>setShowModel(false)}/>
   }
-        <div class="flex header waypoint animated slide-in-right" data-animation="slide-in-right">
+        <div class="flex header">
           PROJECTS
         </div>
-        <div class="flex header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s"></div>
+        <div class="flex header-bar"></div>
 
         <div class="flex filter-wrap">
-          <div class="flex row">
-            <div>Projects & Products</div>
-            
+          <div class="flex">
+            <div>Projects & Products</div>            
           </div>
         </div>
 
-        <div id="gallery" class="container flex wrap animated">
-          <div class="mix products" data-my-order="1" data-bound="">
+        <div id="gallery" class="container flex wrap">
+          <div class="mix products">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -52,7 +51,7 @@ function Projects(props){
             </div>
           </div>
 
-          <div class="mix products" data-my-order="1" data-bound="">
+          <div class="mix products">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -63,7 +62,7 @@ function Projects(props){
             </div>
           </div>
 
-          <div class="mix products" data-my-order="1" data-bound="">
+          <div class="mix products">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -74,7 +73,7 @@ function Projects(props){
             </div>
           </div>
 
-          <div class="mix projects" data-my-order="1" data-bound="">
+          <div class="mix projects">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -85,7 +84,7 @@ function Projects(props){
             </div>
           </div>
 
-          <div class="mix projects" data-my-order="1" data-bound="">
+          <div class="mix projects">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -96,7 +95,7 @@ function Projects(props){
             </div>
           </div>
 
-          <div class="mix projects" data-my-order="1" data-bound="">
+          <div class="mix projects">
             <div class="flex">
               <div class="card"></div>
               <div class="text">
@@ -114,13 +113,3 @@ function Projects(props){
 }
 
 export default Projects;
-
-
-          <div class="float-bar">
-            <div class="flex row" >
-              <div class="filter active" data-filter="all">ALL</div>
-              <div class="filter" data-filter=".rails">RUBY/RAILS</div>
-              <div class="filter" data-filter=".react">REACT-JS</div>
-              <div class="filter" data-filter=".js">JAVASCRIPT</div>
-            </div>
-          </div>

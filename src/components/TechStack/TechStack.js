@@ -20,13 +20,13 @@ function TechStack(props) {
 	return(
 		<section class="teck-stack-wrapper" id="techstack" ref={props.refTechProp}>
 
-			<div class="flex header waypoint animated slide-in-left" data-animation="slide-in-left">Tech Stack</div>
-			<div class="flex header-bar  animated slide-in-left" data-animation="slide-in-left" data-delay=".5s"></div>
+			<div class="flex header">Tech Stack</div>
+			<div class="flex header-bar"></div>
 			<div class="flex" ref={inputRef}>
 	          		<p class="content tech-description">From my years of experience, I had an opportunity to work with an awesome team and projects, where I was able to grow the technical skills that I can currently utilize. I got to work with both front-end and back-end technologies.</p>
 	        </div>
 			<div class="flex container">
-				<div class="flex flex-50-gt-sm waypoint bars-wrap animated slide-in-right" data-animation="slide-in-right">
+				<div class="flex flex-50-gt-sm">
               <div class="bar flex">                
                 <div class="flex percentage"><span>90%</span></div>
                 <div class="bar fill" >
