@@ -19,7 +19,3 @@ function Home(props){
 }
 
 export default Home;
-
-<div class="button" dest="about">
-            View my work <i class="mdi mdi-arrow-right"></i>
-         </div>

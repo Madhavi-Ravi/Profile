@@ -91,8 +91,9 @@ section {
 	color: #fff;
     height: calc(100vh + 53px);
     padding: 0 10px;
-    background-color: #063a06;
-    background-image: url(coverpic.gif);
+    background-color: black;
+    background-image: url(portfoliobanner.gif);
+    background-size: cover;
 }
 
 /*Navigation*/
@@ -309,7 +310,7 @@ nav .link-wrap.visible {
 }
 
 .bar.flex:nth-child(5) .fill{
-	width: 70%;
+	width: 80%;
 }
 
 .bar.flex:nth-child(6) .fill{
@@ -380,13 +381,13 @@ section:nth-of-type(4) #gallery .mix:hover .text {
   cursor: default;
   opacity: 1;
   top: 34%;
-  color: #000;
   position: absolute;
+  color: #e31b6d;
 }
 section:nth-of-type(4) #gallery .mix:hover .lm-button {
   top: 40%;
   opacity: 1;
-  color: #000;
+  color: #e31b6d;
   position: absolute;
   top: 120px;
 }

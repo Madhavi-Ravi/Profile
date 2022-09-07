@@ -1,13 +1,13 @@
 function Blogs(props){
   return(
   <section class="flex" id="blog" ref={props.refBlogsProp}>
-        <div class="flex header waypoint animated slide-in-right" data-animation="slide-in-right">
+        <div class="flex header">
           Blogs
         </div>
-        <div class="flex header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".3s"></div>
+        <div class="flex header-bar"></div>
         <div id="blogs" class="container flex wrap animated">
-          <div class="mix products" data-my-order="1" data-bound="">          
-            <a href="https://productimize.com/blog/how-to-integrate-productimize-with-bigcommerce/">
+          <div class="mix products">          
+            <a href="https://productimize.com/blog/how-to-integrate-productimize-with-bigcommerce/" target="_blank">
               <div class="flex">
                 <div class="card"></div>
                 <div class="blog-title">
@@ -18,8 +18,8 @@ function Blogs(props){
             </a>
           </div>
 
-          <div class="mix products" data-my-order="1" data-bound="">
-            <a href="https://productimize.com/blog/providing-sleek-experience-to-printing-and-gift-card-industry/">              <div class="flex">
+          <div class="mix products">
+            <a href="https://productimize.com/blog/providing-sleek-experience-to-printing-and-gift-card-industry/" target="_blank">              <div class="flex">
               <div class="card"></div>
                 <div class="blog-title">
                   <div class="bold">Sleek experience with Productimize</div>
@@ -29,8 +29,8 @@ function Blogs(props){
             </a>
           </div>
 
-          <div class="mix products" data-my-order="1" data-bound="">
-            <a href="https://productimize.com/portfolio/old-spice/">
+          <div class="mix products">
+            <a href="https://productimize.com/portfolio/old-spice/" target="_blank">
              <div class="flex">
                 <div class="card"></div>
                 <div class="blog-title">

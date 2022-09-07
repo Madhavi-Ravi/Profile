@@ -9,19 +9,19 @@ function Aboutme(props) {
 	return(
 		<section id="about" ref={props.refAboutProp}>
 
-			<div class="flex header waypoint animated slide-in-left" data-animation="slide-in-left">ABOUT</div>
-			<div class="flex header-bar  animated slide-in-left" data-animation="slide-in-left" data-delay=".5s"></div>
-			<div class="container ">
+			<div class="flex header">ABOUT</div>
+			<div class="flex header-bar"></div>
+			<div class="container">
 				<div class=" row label-wrap">
 	            <div class=" row-gt-sm">
 	              <div class="bullet-wrap">
 					<div class="bullet-wrap-one"></div>
-	                <div class="flex hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x">
+	                <div class="flex hex-wrap">
 	                  <div class="hexagon">
 	                    <SiSpeedtest size={70} class="obj_icons"/>
 	                  </div>
 	                </div>
-	                <div class="flex waypoint animated fade-in" data-animation="fade-in">
+	                <div class="flex">
 	                  <div class="label bold">Fast</div>
 	                  <div class="content description">
 	                    Fast load times and lag free interaction, my highest
@@ -32,12 +32,12 @@ function Aboutme(props) {
 
 	              <div class="bullet-wrap">
 	              	<div class="bullet-wrap-two"></div>
-	                <div class="flex hex-wrap waypoint animated flip-in-x">
+	                <div class="flex hex-wrap">
 	                  <div class="hexagon">
 	                    <VscChecklist size={70} class="obj_icons"/>
 	                  </div>
 	                </div>
-	                <div class="flex waypoint animated fade-in">
+	                <div class="flex">
 	                  <div class="label bold">Responsible</div>
 	                  <div class="content description">I like to take Responsiblilty for my work be it, big or small.</div>
 	                </div>
@@ -46,12 +46,12 @@ function Aboutme(props) {
 	            <div class=" row-gt-sm">
 	              <div class="bullet-wrap">
 	                <div class="bullet-wrap-three"></div>
-	                <div class="flex hex-wrap waypoint animated flip-in-x" >
+	                <div class="flex hex-wrap" >
 	                  <div class="hexagon">	                    
 	                    <MdLightbulb size={70} class="obj_icons"/>
 	                  </div>
 	                </div>
-	                <div class="flex waypoint animated fade-in">
+	                <div class="flex">
 	                  <div class="label bold">Intuitive</div>
 	                  <div class="content description">Strong preference for easy to use, intuitive User Interface.</div>
 	                </div>
@@ -59,12 +59,12 @@ function Aboutme(props) {
 
 	              <div class="bullet-wrap">
 	                <div class="bullet-wrap-four"></div>
-	                <div class="flex hex-wrap waypoint animated flip-in-x">
+	                <div class="flex hex-wrap">
 	                  <div class="hexagon"> 
 	                    <BiRocket size={70} class="obj_icons"/>
 	                  </div>
 	                </div>
-	                <div class="flex waypoint animated fade-in">
+	                <div class="flex">
 	                  <div class="label bold">Dynamic</div>
 	                  <div class="content description">
 	                    Websites don't have to be static, I love making pages come
