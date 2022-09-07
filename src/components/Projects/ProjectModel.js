@@ -109,8 +109,6 @@ console.log(props.images);
               {props.images.map((ImageArray) => (
 	                    <img class="slide" src={ImageArray} alt="responsibility"/>
               ))}
-              <i class="mdi mdi-chevron-left" id="prev"></i>
-              <i class="mdi mdi-chevron-right" id="next"></i>
             </div>
           </div>
          </div>
@@ -118,9 +116,11 @@ console.log(props.images);
         <div class="title bold">{props.title}</div>
           <div class="tag">{props.tech}</div>
             <div class="detail">{props.description}</div>
-            <a href={props.link} target="_blank"><div class="button visible">
-                <i class="mdi mdi-open-in-new"></i>VIEW SITE
-          </div></a>
+            { props.link != "" &&
+	            <a href={props.link} target="_blank"><div class="button visible">
+	                VIEW SITE
+	          	</div></a>
+      		}
 
         <button class="close" id="trigger_close" onClick={props.onConfirm}><VscClose size={30} class="close"/></button>
       </div>      	

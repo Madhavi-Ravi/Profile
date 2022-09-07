@@ -6,18 +6,13 @@ function Footer(){
 		<footer>
         <div class="icon-wrap flex row">
           <a href="https://www.linkedin.com/in/madhavi-ravi/">
-          <div class="flex icon" id="icon-2" size={40} >
+          <div class="flex icon" id="icon-2" size={30} >
               <FaLinkedin />
             </div>
           </a>
           <a href="mailto:madhaviravi04@gmail.com">
             <div class="flex icon" id="icon-3" size={30}>
               <FaMailBulk/>
-            </div>
-          </a>
-          <a href="http://codepen.io/">
-            <div class="flex icon" id="icon-5" size={30}>
-              <FaCodepen/>
             </div>
           </a>
         </div>
@@ -31,3 +26,10 @@ function Footer(){
 }
 
 export default Footer;
+
+
+          <a href="http://codepen.io/">
+            <div class="flex icon" id="icon-5" size={30}>
+              <FaCodepen/>
+            </div>
+          </a>

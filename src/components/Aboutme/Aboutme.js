@@ -75,7 +75,7 @@ function Aboutme(props) {
 	            </div>
 	          </div>
 	          <div class="flex row content-wrap">
-	          		<h2 class="obj_title">OBJECTIVE</h2>
+	          		<h2 class="obj_title">ABOUT ME</h2>
 	          		<p class="content obective-content">I'm a Full-Stack Developer, Currently working as a freelancer for developing a billing application for a local retailer. My interest is in developing intuitive user interfaces, Web APIs, and Fast and Scalable backend solutions. I had the privilege of working on building an enterprise-scale product, application software, and a couple of e-commerce website.</p>
 	          </div>
 			</div>
