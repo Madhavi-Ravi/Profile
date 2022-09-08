@@ -15,22 +15,6 @@ function Aboutme(props) {
 				<div class=" row label-wrap">
 	            <div class=" row-gt-sm">
 	              <div class="bullet-wrap">
-					<div class="bullet-wrap-one"></div>
-	                <div class="flex hex-wrap">
-	                  <div class="hexagon">
-	                    <SiSpeedtest size={70} class="obj_icons"/>
-	                  </div>
-	                </div>
-	                <div class="flex">
-	                  <div class="label bold">Fast</div>
-	                  <div class="content description">
-	                    Fast load times and lag free interaction, my highest
-	                    priority.
-	                  </div>
-	                </div>
-	              </div>
-
-	              <div class="bullet-wrap">
 	              	<div class="bullet-wrap-two"></div>
 	                <div class="flex hex-wrap">
 	                  <div class="hexagon">
@@ -40,6 +24,21 @@ function Aboutme(props) {
 	                <div class="flex">
 	                  <div class="label bold">Responsible</div>
 	                  <div class="content description">I like to take Responsiblilty for my work be it, big or small.</div>
+	                </div>
+	              </div>
+	              <div class="bullet-wrap">
+	                <div class="bullet-wrap-four"></div>
+	                <div class="flex hex-wrap">
+	                  <div class="hexagon"> 
+	                    <BiRocket size={70} class="obj_icons"/>
+	                  </div>
+	                </div>
+	                <div class="flex">
+	                  <div class="label bold">Dynamic</div>
+	                  <div class="content description">
+	                    Websites don't have to be static, I love making pages come
+	                    to life.
+	                  </div>
 	                </div>
 	              </div>
 	            </div>
@@ -56,19 +55,18 @@ function Aboutme(props) {
 	                  <div class="content description">Strong preference for easy to use, intuitive User Interface.</div>
 	                </div>
 	              </div>
-
 	              <div class="bullet-wrap">
-	                <div class="bullet-wrap-four"></div>
+					<div class="bullet-wrap-one"></div>
 	                <div class="flex hex-wrap">
-	                  <div class="hexagon"> 
-	                    <BiRocket size={70} class="obj_icons"/>
+	                  <div class="hexagon">
+	                    <SiSpeedtest size={70} class="obj_icons"/>
 	                  </div>
 	                </div>
 	                <div class="flex">
-	                  <div class="label bold">Dynamic</div>
+	                  <div class="label bold">Fast</div>
 	                  <div class="content description">
-	                    Websites don't have to be static, I love making pages come
-	                    to life.
+	                    Fast load times and lag free interaction, my highest
+	                    priority.
 	                  </div>
 	                </div>
 	              </div>

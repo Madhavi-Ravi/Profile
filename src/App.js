@@ -9,7 +9,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 function App() {
-	const intialArray = ['active','','','','','' ];
+	const intialArray = ['','','','','','' ];
 	const[activeArray, setActivearray] = useState(intialArray);
     const homeRef = useRef(null);
     const techRef = useRef(null);
@@ -22,33 +22,37 @@ function App() {
     //console.log(window.addEventListener('focusin', handleNavigation));
     const executeHomeScroll = () => {
     	homeRef.current.scrollIntoView(); 
-    	setActivearray(['','','active','','','']);
+    	//setActivearray(['','','active','','','']);
     } 
 
     const executeTechScroll = () => {
     	techRef.current.scrollIntoView(); 
-    	setActivearray(['','','active','','','']);
+    	//setActivearray(['','','active','','','']);
     }
 
     const executeAboutScroll = () => {
     	aboutRef.current.scrollIntoView();
-    	setActivearray(['','active','','','','']);
+    	//setActivearray(['','active','','','','']);
     }
 
     const executeProjectsScroll = () => {
     	projectsRef.current.scrollIntoView();
-    	setActivearray(['','','','active','','']);
+    	//setActivearray(['','','','active','','']);
     } 
 
     const executeBlogsScroll = () => {
     	blogsRef.current.scrollIntoView(); 
-    	setActivearray(['','','','','active','']);
+    	//setActivearray(['','','','','active','']);
     }
 
     const executeContactScroll = () => {
     	contactRef.current.scrollIntoView();
-    	setActivearray(['','','','','','active']);
+    	//setActivearray(['','','','','','active']);
     }
+
+    window.onscroll = () => {
+            //setActivearray(['','','','','','']);
+    };
 
   return (
     <div class="body-wrappper">

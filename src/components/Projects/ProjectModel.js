@@ -82,7 +82,7 @@ var key = "p"+props.no;
 console.log(key, project[key]);
   return (
     <React.Fragment>
-      <div class="backdrop" onConfrim={props.onConfrim} />
+      <div class="backdrop" onClick={props.onConfirm} />
       
         <ModalOverlay 
           title={project[key]['title']}

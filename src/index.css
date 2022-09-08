@@ -234,7 +234,7 @@ nav .link-wrap.visible {
 }
 
 .label{
-	margin: 25px 0 25px 0;
+	margin: 15px 0 15px 0;
 }
 
 /*Tech Stack*/
@@ -375,7 +375,7 @@ section:nth-of-type(4) .row {
 }
 
 section:nth-of-type(4) #gallery .mix:hover .card {
-  opacity: 0;
+  opacity: 0.2;
 }
 section:nth-of-type(4) #gallery .mix:hover .text {
   cursor: default;
@@ -591,7 +591,6 @@ input{
 }
 
 .slide {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     float: left;
