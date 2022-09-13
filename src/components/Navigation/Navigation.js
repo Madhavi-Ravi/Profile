@@ -1,14 +1,14 @@
 function Navigation() {
 	// body...
 	return(
-		<nav class="flex link-wrap desk">
-          <div class="page-link active" dest="home">Home</div>
-          <div class="page-link" dest="about">About</div>
-          <div class="page-link" dest="techstack">Tech Stack</div>
-          <div class="page-link" dest="portfolio">portfolio</div>
-          <div class="page-link" dest="blog">blog</div>
-          <div class="page-link" dest="contact">contact</div>
-        <i class="mdi mdi-menu"></i>
+		<nav className="flex link-wrap desk">
+          <div className="page-link active" dest="home">Home</div>
+          <div className="page-link" dest="about">About</div>
+          <div className="page-link" dest="techstack">Tech Stack</div>
+          <div className="page-link" dest="portfolio">portfolio</div>
+          <div className="page-link" dest="blog">blog</div>
+          <div className="page-link" dest="contact">contact</div>
+        <i className="mdi mdi-menu"></i>
       </nav>
 
 		)

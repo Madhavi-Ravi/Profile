@@ -4,13 +4,13 @@ import mypic from './image/mypic.jpg'
 function Home(props){
 
 	return(
-        <section id="home" class="flex" ref={props.refHomeProp}>
-		   <div class="home-wrapper">
-             	<div class="title flex">Hi, I am <span>Madhavi Ravi</span></div>
-                <div class="flex profile-img">
+        <section id="home" className="flex" ref={props.refHomeProp}>
+		   <div className="home-wrapper">
+             	<div className="title flex">Hi, I am <span>Madhavi Ravi</span></div>
+                <div className="flex profile-img">
                         <img src={mypic} alt="picture"/>
                 </div>
-            	<div class="flex text">
+            	<div className="flex text">
                     <span>Full-Stack Developer.</span>
                 </div>         
             </div>

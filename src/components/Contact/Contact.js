@@ -1,14 +1,14 @@
 import React,{useState} from 'react';
 
 function Contact(props){
-  const[showMsgClass, setShowMsgClass] = useState('hide');
+  const[showMsgclassName, setShowMsgclassName] = useState('hide');
   const sendFeedback = (templateId, variables) => {
     window.emailjs.send(
       'service_zcko5on', templateId,
       variables, 'OiVhVxzTDhWLTBAWO'
       ).then(res => {
         console.log('Email successfully sent!')
-        setShowMsgClass("show");
+        setShowMsgclassName("show");
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
@@ -24,24 +24,24 @@ function Contact(props){
 
   return(
     <section id="contact" ref={props.refContactProp}>
-        <div class="container flex">
-          <div class="header">
+        <div className="container flex">
+          <div className="header">
             CONTACT
           </div>
-          <div class="header-bar"></div>
-          <div class="highlight">
+          <div className="header-bar"></div>
+          <div className="highlight">
             Have a question or want to work together?
           </div>
-          <form class="flex" id="contact-form" onSubmit={handleSubmit}>
+          <form className="flex" id="contact-form" onSubmit={handleSubmit}>
             <input name="name" type="text" placeholder="Your Name" required/>
             <input name="emailid" type="email-id" placeholder="Your Email Id" required/>
             <textarea placeholder="Your Message" type="text" name="message" required></textarea>
-            <div class={`${showMsgClass}`} id="">
+            <div className={`${showMsgclassName}`} id="">
               <div>
                 Your message was sent successfully. Thanks!
               </div>
             </div>
-            <button type="submit" class="contact-button" name="contact_submit">Submit</button>
+            <button type="submit" className="contact-button" name="contact_submit">Submit</button>
           </form>
         </div>
       </section>

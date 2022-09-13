@@ -82,7 +82,7 @@ var key = "p"+props.no;
 console.log(key, project[key]);
   return (
     <React.Fragment>
-      <div class="backdrop" onClick={props.onConfirm} />
+      <div className="backdrop" onClick={props.onConfirm} />
       
         <ModalOverlay 
           title={project[key]['title']}
@@ -102,34 +102,34 @@ console.log(key, project[key]);
 const ModalOverlay = (props) => { 
 console.log(props.images);
   return (
-    <div class="modal">
-        <div class="carousel-wrap" >
-            <div class="window">
-              <div id="carousel"  class="">
+    <div className="modal">
+        <div className="carousel-wrap" >
+            <div className="window">
+              <div id="carousel"  className="">
               {props.images.map((ImageArray) => (
-	                    <img class="slide" src={ImageArray} alt="responsibility"/>
+	                    <img className="slide" src={ImageArray} alt="responsibility"/>
               ))}
             </div>
           </div>
          </div>
-      <div class="info-box">
-        <div class="title bold">{props.title}</div>
-          <div class="tag">{props.tech}</div>
-            <div class="detail">{props.description}</div>
+      <div className="info-box">
+        <div className="title bold">{props.title}</div>
+          <div className="tag">{props.tech}</div>
+            <div className="detail">{props.description}</div>
             { props.link != "" &&
-	            <a href={props.link} target="_blank"><div class="button visible">
+	            <a href={props.link} target="_blank"><div className="button visible">
 	                VIEW SITE
 	          	</div></a>
       		}
 
-        <button class="close" id="trigger_close" onClick={props.onConfirm}><VscClose size={30} class="close"/></button>
+        <button className="close" id="trigger_close" onClick={props.onConfirm}><VscClose size={30} className="close"/></button>
       </div>      	
     </div>
   );
 };
 
 const Backdrop = (props) =>{
-  return (<div class="backdrop" onConfrim={props.onClick} />);
+  return (<div className="backdrop" onConfrim={props.onClick} />);
 };
 
 

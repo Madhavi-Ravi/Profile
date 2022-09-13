@@ -55,15 +55,15 @@ function App() {
     };
 
   return (
-    <div class="body-wrappper">
+    <div className="body-wrappper">
 	    <Home refHomeProp={homeRef}></Home>
-	    <nav class="flex link-wrap desk">
-    	    <div class={`page-link ${activeArray[0]}`} dest="home" onClick={executeHomeScroll}>Home</div>	    
-            <div class={`page-link ${activeArray[1]}`} dest="about" onClick={executeAboutScroll}>About</div>
-    	    <div class={`page-link ${activeArray[2]}`} dest="techstack" onClick={executeTechScroll}>Tech Stack</div>
-    	    <div class={`page-link ${activeArray[3]}`} dest="portfolio" onClick={executeProjectsScroll}>Projects</div>
-    	    <div class={`page-link ${activeArray[4]}`} dest="blog" onClick={executeBlogsScroll}>Blog</div>
-    	    <div class={`page-link ${activeArray[5]}`} dest="contact" onClick={executeContactScroll}>Contact</div>
+	    <nav className="flex link-wrap desk">
+    	    <div className={`page-link ${activeArray[0]}`} dest="home" onClick={executeHomeScroll}>Home</div>	    
+            <div className={`page-link ${activeArray[1]}`} dest="about" onClick={executeAboutScroll}>About</div>
+    	    <div className={`page-link ${activeArray[2]}`} dest="techstack" onClick={executeTechScroll}>Tech Stack</div>
+    	    <div className={`page-link ${activeArray[3]}`} dest="portfolio" onClick={executeProjectsScroll}>Projects</div>
+    	    <div className={`page-link ${activeArray[4]}`} dest="blog" onClick={executeBlogsScroll}>Blog</div>
+    	    <div className={`page-link ${activeArray[5]}`} dest="contact" onClick={executeContactScroll}>Contact</div>
 	    </nav>
 	    <Aboutme refAboutProp={aboutRef}></Aboutme>
     	<TechStack refTechProp={techRef}></TechStack>    	
