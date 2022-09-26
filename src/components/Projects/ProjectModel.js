@@ -11,7 +11,7 @@ import qatouch from './images/qatouch/qatouch.png';
 import mds from './images/MDS/homepage.png';
 import productimize from './images/productimize/Productimize.png';
 import priceguru_hp from './images/priceguru/Magento_Banner.jpg';
-import reactapplication from './images/reactapplication/homepage.png';
+import reactapplication from './images/reactapplication/homepage1.png';
 import { VscClose } from 'react-icons/vsc';
 
 const ProjectModel = (props) => {
